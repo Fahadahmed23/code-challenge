@@ -57,7 +57,112 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Filter</title>
-  
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        margin-right: 10px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="submit"] {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tfoot td:first-child {
+        font-weight: bold;
+      }
+
+      tfoot td:last-child {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      @media (max-width: 767px) {
+          form {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          label {
+            margin-right: 0;
+            margin-bottom: 5px;
+          }
+
+          input[type="text"],
+          input[type="number"],
+          input[type="submit"] {
+            margin-right: 0;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 24px;
+          }
+        }
+
+
+
+
+    </style>
   </head>
   <body>
     <h1>Sales Filter</h1>
